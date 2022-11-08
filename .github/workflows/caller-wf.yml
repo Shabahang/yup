@@ -19,7 +19,7 @@ jobs:
   dotenv:
     uses: falti/dotenv-action//.github/actions/dotenv-action@master
     with:
-      path: ./.github/workflow/.env.java
+      path: ./.github/workflows/.env.java
   echo:
     # The type of runner that the job will run on
     uses: shabahang/yup/.github/workflows/shared-echo.yml@master
