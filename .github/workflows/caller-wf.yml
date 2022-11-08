@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "echo"
   dotenv:
-    uses: falti/dotenv-action/.github/actions/dotenv-action@master
+    uses: falti/dotenv-action@v1
     with:
       path: ./.github/workflows/.env.java
   echo:
