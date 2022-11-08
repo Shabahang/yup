@@ -17,9 +17,9 @@ on:
 jobs:
   # This workflow contains a single job called "echo"
   dotenv:
-    uses: falti/dotenv-action//.github/actions/dotenv-action@master
+    uses: falti/dotenv-action/.github/actions/dotenv-action@master
     with:
-      path: .github/workflows/.env.java
+      path: ./.github/workflows/.env.java
   echo:
     # The type of runner that the job will run on
     uses: shabahang/yup/.github/workflows/shared-echo.yml@master
