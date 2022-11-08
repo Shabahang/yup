@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "echo"
   echo:
     # The type of runner that the job will run on
-    uses: shabahang/yup/.github/workflows/shared-echo.yml@main
+    uses: shabahang/yup/.github/workflows/shared-echo.yml@master
     with:
       echo_text: "Text from caller"
   
