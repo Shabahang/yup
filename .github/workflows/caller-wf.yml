@@ -16,15 +16,15 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "echo"
-  dotenv:
-    uses: falti/dotenv-action@v1
-    with:
-      path: ./.github/workflows/.env.java
-  echo:
-    # The type of runner that the job will run on
-    uses: shabahang/yup/.github/workflows/shared-echo.yml@master
-    with:
-      echo_text: ${{ steps.dotenv.outputs.is_java }}
+  steps:
+    - name: dotenv
+      uses: falti/dotenv-action@v1
+      with:
+        path: ./.github/workflows/.env.java
+    - name: echo
+      uses: shabahang/yup/.github/workflows/shared-echo.yml@master
+      with:
+        echo_text: ${{ steps.dotenv.outputs.is_java }}
 
 
   
