@@ -20,13 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dotenv
-        uses: falti/dotenv-action@v1
+        #uses: falti/dotenv-action@v1
+        uses: xom9ikk/dotenv@v2
         with:
           path: ./.github/workflows/.env.java
       - name: echo
         uses: shabahang/yup/.github/workflows/shared-echo.yml@master
         with:
-          echo_text: ${{ steps.dotenv.outputs.is_java }}
+          echo_text: ${{ env.is_java }}
 
 
   
